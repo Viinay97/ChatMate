@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 700px){
+    #sendInp{
+        width: 70%;
+    }
+    .btn{
+        font-size: 0.6em;
+        width: 20%;
+    }
+}
+@media only screen and (max-width:670px){
+    #sendInp{
+        width: 80%;
+    }
+    .btn{
+        width:14%;
+    }
+}
+@media only screen and (min-width:670px) and (max-width:1055px){
+    #sendInp{
+        width: 85%;
+    }
+    .btn{
+        width:10%;
+    }
+} 
+@media only screen and (min-width:1055px){
+    #sendInp{
+        width: 90%;
+    }
+    .btn{
+        width: 8%;
+    }
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,1.5),rgb(62, 198, 62));
+}
+nav{
+    display: block;
+    width: 65vw;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#appTitle{
+    border: 3px solid green;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 3px 5px;
+    background-color: green;
+}
+#logo{
+    margin: 0px 10px;
+    display: inline;
+    height: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: url('../background.png');
+    border-radius: 20px;
+    max-width: 60vw;
+    margin: auto;
+    padding: 30px;
+    height: 60vh;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.message{
+    width: 40%;
+    background-color: rgb(170 245 194);
+    border-radius:3px;
+    margin: 10px;
+    padding: 10px;
+}
+.left{
+    border-top-right-radius: 25px;
+    align-self: flex-start;
+}
+.right{
+    border-top-left-radius: 25px;
+    align-self: flex-end;
+}
+.btn{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+}
+#send-container{
+    display:block;
+    margin: auto;
+    text-align: center;
+    width: 65vw;
+}
+#sendInp{
+    padding: 10px 5px;
+    margin: 10px 0px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
